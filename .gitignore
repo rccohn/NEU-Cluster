@@ -127,3 +127,8 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+## virtual environment
+NEUEnv/
+notebooks/old/
+NEU-CLS-processed/
