@@ -76,7 +76,7 @@ def pretty_cm(cm, labelnames, cscale=0.6, ax0=None, fs=12, cmap='magma'):
     Returns
     ---------
     None
-
+    
     """
     
     acc = cm.trace() / cm.sum()
@@ -110,3 +110,4 @@ def pretty_cm(cm, labelnames, cscale=0.6, ax0=None, fs=12, cmap='magma'):
         return
     else:
         return ax
+
