@@ -44,7 +44,7 @@ def pano_plot(x, y, paths, patch_size=(3, 3), ax0=None):
         plt.show()
 
 
-def pretty_cm(cm, labelnames, cscale=0.6, ax0=None, fs=12, cmap='magma'):
+def pretty_cm(cm, labelnames, cscale=0.6, ax0=None, fs=6, cmap='cool'):
     """
     Generates a pretty-formated confusion matrix for convenient visualization.
     
@@ -81,7 +81,7 @@ def pretty_cm(cm, labelnames, cscale=0.6, ax0=None, fs=12, cmap='magma'):
     
     acc = cm.trace() / cm.sum()
     if ax0 is None:
-        fig, ax = plt.subplots(nrows=1, ncols=1, figsize=(7, 7), dpi=300)
+        fig, ax = plt.subplots(nrows=1, ncols=1, figsize=(2.5, 2.5), dpi=300)
         fig.set_facecolor('w')
     else:
         ax = ax0
@@ -89,11 +89,14 @@ def pretty_cm(cm, labelnames, cscale=0.6, ax0=None, fs=12, cmap='magma'):
     n = len(labelnames)
     ax.imshow(np.power(cm, cscale), cmap=cmap, extent=(0, n, 0, n))
     labelticks = np.arange(n) + 0.5
+    
     ax.set_xticks(labelticks, minor=True)
     ax.set_yticks(labelticks, minor=True)
     ax.set_xticklabels(['' for i in range(n)], minor=False, fontsize=fs)
     ax.set_yticklabels(['' for i in range(n)], minor=False, fontsize=fs)
-
+    
+    ax.set_xticks(np.arange(n))
+    ax.set_yticks(np.arange(n))
     ax.set_xticklabels(labels=labelnames, minor=True, fontsize=fs)
     ax.set_yticklabels(labels=reversed(labelnames), minor=True, fontsize=fs)
 
@@ -101,11 +104,11 @@ def pretty_cm(cm, labelnames, cscale=0.6, ax0=None, fs=12, cmap='magma'):
     ax.set_ylabel('Actual Labels', fontsize=fs)
     for (i, j), z in np.ndenumerate(cm):
         ax.text(j + 0.5, n - i - 0.5, '{:^5}'.format(z), ha='center', va='center', fontsize=fs,
-                bbox=dict(boxstyle='round', facecolor='white', edgecolor='0.3'))
-    ax.grid(which='major', color=np.ones(3) * 0.33, linewidth=1.5)
+                bbox=dict(boxstyle='round', facecolor='w', edgecolor='0.3'))
+    ax.grid(which='major', color=np.ones(3) * 0.33, linewidth=1)
 
     if ax0 is None:
-        ax.set_title('Accuracy: {:.3f}'.format(cm.trace() / cm.sum()))
+        ax.set_title('Accuracy: {:.3f}'.format(cm.trace() / cm.sum()), fontsize=fs+2)
         plt.show()
         return
     else:
