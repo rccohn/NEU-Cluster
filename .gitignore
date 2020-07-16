@@ -130,5 +130,6 @@ dmypy.json
 
 ## virtual environment
 NEUEnv/
+testenv/
 notebooks/old/
 NEU-CLS-processed/
