@@ -51,7 +51,7 @@ browser. You can now access and run the notebooks!
 1)  Ryan Cohn and Elizabeth Holm, Unsupervised machine learning via transfer 
 learning and k-means clustering to classify materials image data, submitted to Integrating Materials and Manufacturing
 Innovation on July 7, 2020 (currently under peer review)
-ArXiv:
+ArXiv: <http://arxiv.org/abs/2007.08361>
 
 2) Kechen Song and Yunhui Yan. “A noise robust method based on completed local binary patternsfor hot-rolled steel 
 strip surface defects”. In:Applied Surface Science285 (Nov. 2013), pp 858-864.
