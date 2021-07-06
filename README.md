@@ -19,7 +19,7 @@ The NEU database provides images of 6 common defect types on hot-rolled steel sh
 The NEU dataset [2] has been open-sourced and is available here: 
 <http://faculty.neu.edu.cn/yunhyan/NEU_surface_defect_database.html>. The link sometimes goes down, see below.
 
-Update: It looks like the NEU-Detection dataset is available on kaggle here: <https://www.kaggle.com/kaustubhdikshit/neu-surface-defect-database>
+Update: It looks like the NEU-Detection dataset is available on kaggle here: <https://www.kaggle.com/kaustubhdikshit/neu-surface-defect-database>.
 This dataset contains the same images, but is divided into train/validation sets, and contains annotations for localizing the images. This project does not cover detection, but the dataset is still of interest to some.
 
 For unsupervised classification (ie this project): Move ALL images (including training and validation for all 6 classes, 1800 total) into a single folder. The annotation files are not needed.
