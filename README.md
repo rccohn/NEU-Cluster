@@ -51,6 +51,25 @@ in the corresponding cell in the notebook. Note that this will overwrite the val
 ## Running the notebooks
 Everything can be done through jupyter. With the environment activated, run ```jupyter lab``` to open Jupyter in your
 browser. You can now access and run the notebooks!
+
+## Citing this work
+If you found this helpful in your own work, pleace cite our publication!
+```
+@article{Cohn2021,
+   author = {Ryan Cohn and Elizabeth Holm},
+   doi = {10.1007/s40192-021-00205-8},
+   issue = {2},
+   journal = {Integrating Materials and Manufacturing Innovation},
+   pages = {231-244},
+   title = {Unsupervised Machine Learning Via Transfer Learning and k-Means Clustering to Classify Materials Image Data},
+   volume = {10},
+   url = {https://doi.org/10.1007/s40192-021-00205-8},
+   year = {2021},
+}
+
+```
+
+
 ## References
 1)  Ryan Cohn and Elizabeth Holm, Unsupervised machine learning via transfer 
 learning and k-means clustering to classify materials image data, Integrating Materials and Manufacturing Innovation, 10, 2021
