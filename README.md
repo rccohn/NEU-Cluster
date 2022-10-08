@@ -53,7 +53,7 @@ Everything can be done through jupyter. With the environment activated, run ```j
 browser. You can now access and run the notebooks!
 
 ## Citing this work
-If you found this helpful in your own work, pleace cite our publication!
+If you found this helpful in your own work, pleace cite our [publication](https://doi.org/10.1007/s40192-021-00205-8)!
 ```
 @article{Cohn2021,
    author = {Ryan Cohn and Elizabeth Holm},
