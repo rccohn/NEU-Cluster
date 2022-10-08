@@ -53,8 +53,8 @@ Everything can be done through jupyter. With the environment activated, run ```j
 browser. You can now access and run the notebooks!
 ## References
 1)  Ryan Cohn and Elizabeth Holm, Unsupervised machine learning via transfer 
-learning and k-means clustering to classify materials image data, submitted to Integrating Materials and Manufacturing
-Innovation on July 7, 2020 (currently under peer review)
+learning and k-means clustering to classify materials image data, Integrating Materials and Manufacturing Innovation, 10, 2021
+DOI: <https://doi.org/10.1007/s40192-021-00205-8>
 ArXiv: <http://arxiv.org/abs/2007.08361>
 
 2) Kechen Song and Yunhui Yan. “A noise robust method based on completed local binary patternsfor hot-rolled steel 
